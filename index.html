@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Off-Road Control</title>
+<meta name="description" content="How the Off-Road Control app for Android handles your data.">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --surface: #F6F7F9;
+    --fg: #171A20;
+    --muted: #5B6270;
+    --rule: #E3E6EB;
+    --accent: #C2410C;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0E1013;
+      --surface: #171A20;
+      --fg: #E8EAEE;
+      --muted: #9AA1AD;
+      --rule: #2A3039;
+      --accent: #F97316;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3rem max(1rem, env(safe-area-inset-right)) 4rem max(1rem, env(safe-area-inset-left));
+  }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  .app { margin: 0; color: var(--accent); font-weight: 600; letter-spacing: .02em; }
+  h1 { margin: .25rem 0 .5rem; font-size: 2.1rem; line-height: 1.2; text-wrap: balance; }
+  .meta { margin: 0; color: var(--muted); font-size: .95rem; }
+  h2 { margin: 2.25rem 0 .75rem; font-size: 1.25rem; line-height: 1.3; text-wrap: balance; }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .summary { background: var(--surface); border-radius: 12px; padding: 1.25rem 1.5rem .5rem; }
+  .summary h2 { margin-top: 0; }
+  .table-wrap { overflow-x: auto; margin: 0 0 1rem; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 34rem; }
+  th, td { text-align: left; vertical-align: top; padding: .65rem .75rem .65rem 0; border-bottom: 1px solid var(--rule); }
+  th { color: var(--muted); font-weight: 600; font-size: .85rem; letter-spacing: .03em; }
+  td:first-child { font-weight: 600; width: 30%; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="app">Off-Road Control</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 31 October 2026. Applies to the Off-Road Control app for Android (com.offroad.control.v1).</p>
+  </header>
+
+  <section class="summary">
+    <h2>In short</h2>
+    <ul>
+      <li>No account, no advertising, no analytics, no tracking.</li>
+      <li>Your trips, locations, vehicle data and settings stay on your tablet. We do not run a server that receives them.</li>
+      <li>To draw the map, the app downloads map images from MapTiler, which sees the map area you are viewing and your IP address.</li>
+      <li>A diagnostic report or an exported route leaves the tablet only when you choose to share or save it.</li>
+    </ul>
+  </section>
+
+  <h2>1. Who we are</h2>
+  <p>Off-Road Control publishes the Off-Road Control app, the companion app for the Off-Road vehicle controller. For any
+    question about this policy or your data, email
+    <a href="mailto:vcnguyendeptrai@gmail.com">vcnguyendeptrai@gmail.com</a>.</p>
+
+  <h2>2. What the app uses, and where it goes</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Location (precise and approximate)</td>
+          <td>Show your position on the map, measure speed and heading, record trips and trails, guide you back home.</td>
+          <td>Stays on the tablet. Never sent to us.</td>
+        </tr>
+        <tr>
+          <td>Map area and IP address</td>
+          <td>Download map tiles and offline map areas.</td>
+          <td>Sent to MapTiler AG (Switzerland) over HTTPS with each map request. See
+            <a href="https://www.maptiler.com/privacy-policy/">MapTiler's privacy policy</a>.</td>
+        </tr>
+        <tr>
+          <td>Vehicle data</td>
+          <td>Battery voltages, temperatures, tank levels, engine readings, vehicle angle and output states, for the
+            dashboard, alerts and switching outputs.</td>
+          <td>Exchanged only between the tablet and your controller, over Bluetooth or the controller's own WiFi.
+            Stored on the tablet.</td>
+        </tr>
+        <tr>
+          <td>Camera video</td>
+          <td>Show live feeds from cameras on your vehicle.</td>
+          <td>Streamed over your vehicle's WiFi and shown live. Not recorded, not sent anywhere.</td>
+        </tr>
+        <tr>
+          <td>What you enter</td>
+          <td>Vehicle name, output names, waypoints, camera addresses, preferences and calibration.</td>
+          <td>Stored on the tablet.</td>
+        </tr>
+        <tr>
+          <td>Diagnostic reports and route files (GPX, KML)</td>
+          <td>Help with support; take routes to other apps.</td>
+          <td>Created on the tablet. They leave it only when you share or save them, to the app or place you choose.</td>
+        </tr>
+        <tr>
+          <td>Controller firmware</td>
+          <td>Update your controller.</td>
+          <td>Comes from the app itself or a file you pick, and goes only to your controller.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>3. What we do not do</h2>
+  <ul>
+    <li>We do not sell or rent your data, or share it with advertisers or data brokers.</li>
+    <li>The app contains no advertising, analytics or crash-reporting software, and does not use an advertising ID.</li>
+    <li>The app has no user accounts and sends nothing to servers run by us.</li>
+  </ul>
+
+  <h2>4. Permissions</h2>
+  <ul>
+    <li><strong>Location</strong>: the map, speed, trips and the way back home. On Android 10 and 11 it is also
+      needed to find the controller over Bluetooth.</li>
+    <li><strong>Nearby devices (Bluetooth)</strong>: find and connect to your controller.</li>
+    <li><strong>Notifications</strong>: the notice Android shows while the app keeps working in the background.</li>
+    <li><strong>Network and WiFi</strong>: download maps, join the controller's WiFi for faster data and firmware
+      updates, and reach your cameras.</li>
+    <li><strong>Foreground service</strong>: keep the link to your controller and trip recording running while the
+      screen is off.</li>
+  </ul>
+
+  <h2>5. Storage, retention and deletion</h2>
+  <p>Your data is kept on the tablet until you delete it in the app (trips, waypoints, cameras) or uninstall the app,
+    which removes all of it. The app opts out of Android backup and device-to-device transfer, so its data is not
+    copied to your Google account or to a new device. We hold no copy of your data, so there is nothing for us to
+    delete on a server. MapTiler handles the data in map requests under its own privacy policy.</p>
+
+  <h2>6. Security</h2>
+  <p>Data on the tablet is protected by Android's app sandbox. Map requests use HTTPS. The link to your controller uses
+    Bluetooth pairing or the controller's password-protected WiFi.</p>
+
+  <h2>7. Children</h2>
+  <p>The app is a tool for vehicle owners and is not directed at children under 13. We do not knowingly collect
+    children's data.</p>
+
+  <h2>8. Google Play</h2>
+  <p>Google Play handles the download and updates of the app under
+    <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If the app starts to handle data differently, for example by offering an optional online service, we will update
+    this page and its effective date before that version is released.</p>
+
+  <h2>10. Contact</h2>
+  <p>Off-Road Control · <a href="mailto:vcnguyendeptrai@gmail.com">vcnguyendeptrai@gmail.com</a></p>
+
+  <footer>© 2026 Off-Road Control</footer>
+</main>
+</body>
+</html>
