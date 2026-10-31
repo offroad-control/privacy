@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foreground Service Demo — Off-Road Control</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg: #FFFFFF; --fg: #171A20; --muted: #5B6270; --rule: #E3E6EB; --accent: #C2410C; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0E1013; --fg: #E8EAEE; --muted: #9AA1AD; --rule: #2A3039; --accent: #F97316; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 60rem; margin: 0 auto; padding: 2.5rem max(1rem, env(safe-area-inset-right)) 3rem max(1rem, env(safe-area-inset-left)); }
+  .app { margin: 0; color: var(--accent); font-weight: 600; }
+  h1 { margin: .25rem 0 1rem; font-size: 1.9rem; line-height: 1.2; text-wrap: balance; }
+  video { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--rule); background: #000; }
+  ol { padding-left: 1.4rem; }
+  li { margin-bottom: .35rem; }
+  p, ol { max-width: 46rem; }
+  .muted { color: var(--muted); font-size: .95rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <p class="app">Off-Road Control</p>
+  <h1>Foreground service demo</h1>
+  <video controls preload="metadata" src="offroad-fgs-demo.mp4"></video>
+  <p>Recorded on the head unit (Android 13) with the app connected to an Off-Road controller over Bluetooth.</p>
+  <ol>
+    <li>0:00–0:11: TRIP → START TRIP. The trip starts recording.</li>
+    <li>0:12–0:23: the app goes to the background. The <strong>Recording trip</strong> notification of the foreground
+      service (types <code>location</code> and <code>connectedDevice</code>) stays in the notification shade.</li>
+    <li>0:24–0:29: back in the app, the trip is still recording.</li>
+    <li>0:30–0:41: GAUGES. Live data from the controller kept arriving the whole time.</li>
+  </ol>
+  <p class="muted">One unrelated notification of another app is blurred. The same <code>connectedDevice</code> service type
+    keeps the controller link alive during a firmware update (2–4 minutes). Direct link to the file:
+    <a href="offroad-fgs-demo.mp4">offroad-fgs-demo.mp4</a>.</p>
+</main>
+</body>
+</html>
